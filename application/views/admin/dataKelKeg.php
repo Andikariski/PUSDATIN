@@ -9,7 +9,7 @@
         </div>
         <div class="row">
             <div class="col">
-                <div class="card mt-4 m-2 ">
+                <div class="card mt-4 m-2 mb-2">
                     <div class="card-header">
                         <div class="row">
                             <div class="col">
