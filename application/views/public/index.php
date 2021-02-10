@@ -32,7 +32,7 @@
                 </div>
             </div>
             <div class="text-center">
-                <a href="<?= base_url() ?>" class="btn-get-started scrollto">Mulai</a>
+                <a href="<?= base_url() ?>" class="btn-get-started scrollto">Get Started</a>
             </div>
 
             <div class="row icon-boxes">
@@ -71,7 +71,6 @@
             </div>
         </div>
     </section><!-- End Hero -->
-
     <main id="main">
 
         <!-- ======= About Section ======= -->
