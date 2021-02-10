@@ -1,29 +1,10 @@
 
 //Alert Hapus data akun
-const flashData1 = $(".flash-tambah").data("flashdata");
+const flashData1 = $(".flash-all").data("flashdata");
 if (flashData1) {
 	Swal.fire({
-		title: "Data Penduduk",
-		text: "Brehasil " + flashData1,
-		icon: "success",
-	});
-}
-
-const flashData9 = $(".flash-ubah").data("flashdata");
-if (flashData9) {
-	Swal.fire({
-		title: "Data Penduduk",
-		text: "Berhasil " + flashData9,
-		icon: "success",
-	});
-}
-
-//Alert Hapus data pendaftar
-const flashData8 = $(".flash-hapus").data("flashdata");
-if (flashData8) {
-	Swal.fire({
-		title: "Data Penduduk",
-		text: "Brehasil " + flashData8,
+		title: "Berhasil",
+		text: "Data Telah" + flashData1,
 		icon: "success",
 	});
 }
@@ -38,72 +19,14 @@ if (flashData3) {
 	});
 }
 
-//Alert open and close pendaftaran
-const flashData2 = $(".flash-data-open").data("flashdata");
-if (flashData2) {
-	Swal.fire({
-		title: "Periode Pendaftaran",
-		text: "Telah " + flashData2,
-		icon: "success",
-	});
-}
-
-//Verifikasi data pendaftar
-const flashData4 = $(".flash-data-verifikasi").data("flashdata");
-if (flashData4) {
-	Swal.fire({
-		title: "Data Pendaftar",
-		text: "Telah " + flashData4,
-		icon: "success",
-	});
-}
-
-//Update data pendaftar
-const flashData7 = $(".flash-data-update").data("flashdata");
-if (flashData7) {
-	Swal.fire({
-		title: "Data Pendaftar",
-		text: "Telah " + flashData7,
-		icon: "success",
-	});
-}
-
-//Gagal mendaftar
-
-const flashData5 = $(".flash-data-gagal-daftar").data("flashdata");
-if (flashData5) {
-	Swal.fire({
-		title: "Gagal Mendaftar",
-		text: "NIK Siswa Telah " + flashData5,
-		icon: "warning",
-	});
-}
-
-const flashData10 = $(".flash-img").data("flashdata");
-if (flashData10) {
-	Swal.fire({
-		title: "Berhasil",
-		text: "Alur pendaftaran berhasil diperbaharui",
-		icon: "success",
-	});
-}
-
-const flashData11 = $(".flash-img-gagal").data("flashdata");
-if (flashData11) {
-	Swal.fire({
-		title: "Gagal",
-		text: "Pilih gambar terlebih dahulu",
-		icon: "warning",
-	});
-}
 
 //konfirmasi hapus data
 $(".tombol-hapus").on("click", function (e) {
 	e.preventDefault();
 	const href = $(this).attr("href");
 	Swal.fire({
-		title: "Apakah Anda Yakin ?",
-		text: "Ingin Menghapus Data !",
+		title: "Apakah Anda Yakin",
+		text: "Ingin Menghapus Data ?",
 		icon: "warning",
 		showCancelButton: true,
 		confirmButtonColor: "#3085d6",

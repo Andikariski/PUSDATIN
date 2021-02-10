@@ -1,6 +1,4 @@
-<div class="flash-hapus" data-flashdata="<?= $this->session->flashdata('flash-hapus') ?>"></div>
-<div class="flash-tambah" data-flashdata="<?= $this->session->flashdata('flash-tambah') ?>"></div>
-<div class="flash-ubah" data-flashdata="<?= $this->session->flashdata('flash-ubah') ?>"></div>
+<div class="flash-all" data-flashdata="<?= $this->session->flashdata('flash-all') ?>"></div>
 <div class="content-wrapper">
     <section class="content">
         <div class="row ">

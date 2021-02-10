@@ -42,14 +42,14 @@ class Admin extends CI_Controller
     {
         $rt = $this->input->post('rt');
         $this->Admin_model->addDataPUSKBM();
-        $this->session->set_flashdata('flash-tambah', ' Di Tambahkan');
+        $this->session->set_flashdata('flash-all', ' Di Tambahkan');
         redirect('admin/dataPUSKB/' . $rt);
     }
 
     public function deleteDataPUSKB($id, $rt)
     {
         $this->Admin_model->deleteDataPUSKBM($id);
-        $this->session->set_flashdata('flash-hapus', ' Di Hapus');
+        $this->session->set_flashdata('flash-all', ' Di Hapus');
         redirect('admin/dataPUSKB/' . $rt);
     }
 
@@ -59,7 +59,7 @@ class Admin extends CI_Controller
         $rt = $this->input->post('rt');
 
         $this->Admin_model->editDataPUSKBM($id);
-        $this->session->set_flashdata('flash-ubah', ' Di Perbarui');
+        $this->session->set_flashdata('flash-all', ' Di Perbarui');
         redirect('admin/dataPUSKB/' . $rt);
     }
 
@@ -85,14 +85,14 @@ class Admin extends CI_Controller
     {
         $rt = $this->input->post('rt');
         $this->Admin_model->addDataKelKegM($rt);
-        $this->session->set_flashdata('flash-tambah', ' Di Tambahkan');
+        $this->session->set_flashdata('flash-all', ' Di Tambahkan');
         redirect('admin/dataKelKg/' . $rt);
     }
 
     public function deleteDataKelKeg($id, $rt)
     {
         $this->Admin_model->deleteDataKelKegM($id);
-        $this->session->set_flashdata('flash-hapus', ' Di Hapus');
+        $this->session->set_flashdata('flash-all', ' Di Hapus');
         redirect('admin/dataKelKg/' . $rt);
     }
 
@@ -102,7 +102,7 @@ class Admin extends CI_Controller
         $rt = $this->input->post('rt');
 
         $this->Admin_model->editDataKelKegM($id);
-        $this->session->set_flashdata('flash-ubah', ' Di Perbarui');
+        $this->session->set_flashdata('flash-all', ' Di Perbarui');
         redirect('admin/dataKelKg/' . $rt);
     }
 
@@ -123,14 +123,14 @@ class Admin extends CI_Controller
     {
         $rt = $this->input->post('rt');
         $this->Admin_model->addDataRentangUsiaM($rt);
-        $this->session->set_flashdata('flash-tambah', ' Di Tambahkan');
+        $this->session->set_flashdata('flash-all', ' Di Tambahkan');
         redirect('admin/dataRentangUsia/' . $rt);
     }
 
     public function deleteDataRentangUsia($id, $rt)
     {
         $this->Admin_model->deleteDataRentangUsiaM($id);
-        $this->session->set_flashdata('flash-hapus', ' Di Hapus');
+        $this->session->set_flashdata('flash-all', ' Di Hapus');
         redirect('admin/dataRentangUsia/' . $rt);
     }
 
@@ -140,7 +140,7 @@ class Admin extends CI_Controller
         $rt = $this->input->post('rt');
 
         $this->Admin_model->editDataRentangUsiaM($id);
-        $this->session->set_flashdata('flash-ubah', ' Di Perbarui');
+        $this->session->set_flashdata('flash-all', ' Di Perbarui');
         redirect('admin/dataRentangUsia/' . $rt);
     }
 }

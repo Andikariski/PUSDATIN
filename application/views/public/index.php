@@ -10,7 +10,7 @@
 
             <nav class="nav-menu d-none d-lg-block">
                 <ul>
-                    <li class="active"><a href="<?= base_url() ?>">Home</a></li>
+                    <li class="active"><a href="#hero">Home</a></li>
                     <li><a href="#about">Tentang</a></li>
                     <li><a href="#services">Organisasi Pemuda</a></li>
 
@@ -32,7 +32,7 @@
                 </div>
             </div>
             <div class="text-center">
-                <a href="<?= base_url() ?>" class="btn-get-started scrollto">Get Started</a>
+                <a href="<?= base_url() ?>" class="btn-get-started scrollto">Mulai</a>
             </div>
 
             <div class="row icon-boxes">
