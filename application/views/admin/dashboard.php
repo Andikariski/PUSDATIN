@@ -10,9 +10,8 @@
                 <!-- small box -->
                 <div class="small-box bg-info">
                     <div class="inner">
-                        <h3><?= $rt['jumlahrt'] ?></h3>
-
-                        <p>Jumlah Penduduk</p>
+                        <h3><?= $rt['jumlahrt'] ?><sup style="font-size: 20px"> Jiwa</sup></h3>
+                        <p>Jumlah Total Penduduk</p>
                     </div>
                     <div class="icon">
                         <i class="ion ion-stats-bars"></i>
@@ -25,7 +24,7 @@
                 <!-- small box -->
                 <div class="small-box bg-success">
                     <div class="inner">
-                        <h3>53<sup style="font-size: 20px">Jiwa</sup></h3>
+                        <h3>53<sup style="font-size: 20px"> Jiwa</sup></h3>
                         <p>Jumlah Penduduk Pria</p>
                     </div>
                     <div class="icon">
@@ -39,7 +38,7 @@
                 <!-- small box -->
                 <div class="small-box bg-warning">
                     <div class="inner">
-                        <h3>53<sup style="font-size: 20px">Jiwa</sup></h3>
+                        <h3>53<sup style="font-size: 20px"> Jiwa</sup></h3>
                         <p>Jumlah Penduduk Wanita</p>
                     </div>
                     <div class="icon">
@@ -53,8 +52,7 @@
                 <!-- small box -->
                 <div class="small-box bg-danger">
                     <div class="inner">
-                        <h3><?= $rt['jumlahrt'] ?></h3>
-
+                        <h3><?= $rt['jumlahrt'] ?><sup style="font-size: 20px"> Ketua RT</sup></h3>
                         <p>Jumlah RT</p>
                     </div>
                     <div class="icon">
