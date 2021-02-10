@@ -117,11 +117,35 @@ class Cetak extends CI_Controller
             $pdf->Cell(8, 6, $i, 1, 0, 'C');
             $pdf->Cell(40, 6, $p['kepala_keluarga'], 1, 0, '');
             $pdf->Cell(45, 6, $p['jumlah_anggota_keluarga'], 1, 0, 'C');
-            $pdf->Cell(19, 6, $p['bkb'], 1, 0, 'C');
-            $pdf->Cell(19, 6, $p['bkr'], 1, 0, 'C');
-            $pdf->Cell(19, 6, $p['bkl'], 1, 0, 'C');
-            $pdf->Cell(19, 6, $p['uppks'], 1, 0, 'C');
-            $pdf->Cell(19, 6, $p['pik_r'], 1, 1, 'C');
+            if ($p['bkb'] == 'ya') {
+                $pdf->Cell(19, 6, 'V', 1, 0, 'C');
+            } else {
+                $pdf->Cell(19, 6, '', 1, 0, 'C');
+            }
+
+            if ($p['bkr'] == 'ya') {
+                $pdf->Cell(19, 6, 'V', 1, 0, 'C');
+            } else {
+                $pdf->Cell(19, 6, '', 1, 0, 'C');
+            }
+
+            if ($p['bkl'] == 'ya') {
+                $pdf->Cell(19, 6, 'V', 1, 0, 'C');
+            } else {
+                $pdf->Cell(19, 6, '', 1, 0, 'C');
+            }
+
+            if ($p['uppks'] == 'ya') {
+                $pdf->Cell(19, 6, 'V', 1, 0, 'C');
+            } else {
+                $pdf->Cell(19, 6, '', 1, 0, 'C');
+            }
+
+            if ($p['pik_r'] == 'ya') {
+                $pdf->Cell(19, 6, 'V', 1, 1, 'C');
+            } else {
+                $pdf->Cell(19, 6, '', 1, 0, 'C');
+            }
             // $pdf->Cell(19, 6, $bkr['jumlahbkr'], 1, 1, 'C');
 
             $i++;
