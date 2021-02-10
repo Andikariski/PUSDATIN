@@ -103,12 +103,12 @@ class Cetak extends CI_Controller
         $pdf->Cell(19, 6, 'PIK-R', 1, 1, 'C');
 
 
-        $bkb = $this->Admin_model->countBKB($rt);
-        $bkr = $this->Admin_model->countBKR($rt);
-        $bkl = $this->Admin_model->countBKL($rt);
-        $uppks = $this->Admin_model->countUPPKS($rt);
-        $pikr = $this->Admin_model->countPIKR($rt);
-        $data = $this->Admin_model->getDataKelKegbyRt($rt);
+        $bkb    = $this->Admin_model->countBKB($rt);
+        $bkr    = $this->Admin_model->countBKR($rt);
+        $bkl    = $this->Admin_model->countBKL($rt);
+        $uppks  = $this->Admin_model->countUPPKS($rt);
+        $pikr   = $this->Admin_model->countPIKR($rt);
+        $data   = $this->Admin_model->getDataKelKegbyRt($rt);
 
 
         $i = 1;

@@ -46,7 +46,7 @@
 
                 <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="300">
                     <div class="icon-box">
-                        <div class="icon"><i class="ri-palette-line"></i></div>
+                        <div class="icon"><i class="ri-user-2-fill"></i></div>
                         <h4 class="title"><a href="">Kepala Keluarga</a></h4>
                         <p class="description">Dusun ngajaran memiliki 350 kepala keluarga yang terbagi di masing-masing RT</p>
                     </div>
@@ -62,7 +62,7 @@
 
                 <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="500">
                     <div class="icon-box">
-                        <div class="icon"><i class="ri-fingerprint-line"></i></div>
+                        <div class="icon"><i class="ri-road-map-fill"></i></i></div>
                         <h4 class="title"><a href="">Wisata</a></h4>
                         <p class="description">Dusun ngajaran memiliki destinasi wisata, salah satunya yaitu wisata Bukit Pangul</p>
                     </div>
