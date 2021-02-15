@@ -18,6 +18,9 @@ class Admin extends CI_Controller
     public function index()
     {
         $data['rt'] = $this->Admin_model->countJumlahRt();
+        $data['nama'] = $this->Admin_model->countJumlahWarga();
+        $data['nik'] = $this->Admin_model->countJumlahWargaL();
+        $data['bpjs'] = $this->Admin_model->countJumlahWargaP();
         $data['menu'] = $this->Admin_model->getDataMenu();
         $this->load->view('tamplateAdmin/header');
         $this->load->view('tamplateAdmin/sidebar', $data);
@@ -142,5 +145,42 @@ class Admin extends CI_Controller
         $this->Admin_model->editDataRentangUsiaM($id);
         $this->session->set_flashdata('flash-all', ' Di Perbarui');
         redirect('admin/dataRentangUsia/' . $rt);
+    }
+
+    public function dataWarga($rt)
+    {
+        $data['tbl_data_warga']      = $this->Admin_model->getDataWargabyRt($rt);
+        $data['index']                  = $this->Admin_model->getDatabyone($rt);
+        $data['menu']                   = $this->Admin_model->getDataMenu();
+
+        $this->load->view('tamplateAdmin/header');
+        $this->load->view('tamplateAdmin/sidebar', $data);
+        $this->load->view('admin/dataWarga', $data);
+        $this->load->view('tamplateAdmin/footer');
+    }
+
+    public function addDataWarga()
+    {
+        $rt = $this->input->post('rt');
+        $this->Admin_model->addDataWargaM($rt);
+        $this->session->set_flashdata('flash-all', ' Di Tambahkan');
+        redirect('admin/dataWarga/' . $rt);
+    }
+
+    public function deleteDataWarga($id, $rt)
+    {
+        $this->Admin_model->deleteDataWargaM($id);
+        $this->session->set_flashdata('flash-all', ' Di Hapus');
+        redirect('admin/dataWarga/' . $rt);
+    }
+
+    public function editDataWarga()
+    {
+        $id =  $this->input->post('id');
+        $rt = $this->input->post('rt');
+
+        $this->Admin_model->editDataWargaM($id);
+        $this->session->set_flashdata('flash-all', ' Di Perbarui');
+        redirect('admin/dataWarga/' . $rt);
     }
 }

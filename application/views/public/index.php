@@ -48,7 +48,7 @@
                     <div class="icon-box">
                         <div class="icon"><i class="ri-user-2-fill"></i></div>
                         <h4 class="title"><a href="">Kepala Keluarga</a></h4>
-                        <p class="description">Dusun ngajaran memiliki 350 kepala keluarga yang terbagi di masing-masing RT</p>
+                        <p class="description">Dusun ngajaran memiliki <?= $status['jumlahKK'] ?> kepala keluarga yang terbagi di masing-masing RT</p>
                     </div>
                 </div>
 

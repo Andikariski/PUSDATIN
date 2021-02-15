@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="<?= base_url('assets/') ?>AdminLTE/plugins/jqvmap/jqvmap.min.css">
     <!-- Theme style -->
     <link rel="stylesheet" href="<?= base_url('assets/') ?>AdminLTE/dist/css/adminlte.min.css">
+    <link rel="stylesheet" href="<?= base_url('assets/') ?>AdminLTE/plugins/chart.js/Chart.css">
     <!-- overlayScrollbars -->
     <link rel="stylesheet" href="<?= base_url('assets/') ?>AdminLTE/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
     <!-- Daterange picker -->
@@ -34,7 +35,6 @@
     <link rel="stylesheet" href="<?= base_url('assets/') ?>AdminLTE/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
     <link rel="stylesheet" href="<?= base_url('assets/') ?>AdminLTE/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
     <!-- Theme style -->
-    <link rel="stylesheet" href="<?= base_url('assets/') ?>AdminLTE/dist/css/adminlte.min.css">
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed">

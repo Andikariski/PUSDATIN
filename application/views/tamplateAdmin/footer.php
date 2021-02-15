@@ -11,31 +11,30 @@
 </div>
 
 <!-- jQuery -->
-<script src="<?= base_url('./assets') ?>/AdminLTE/plugins/jquery/jquery.min.js"></script>
+<script src="<?= base_url('assets') ?>/AdminLTE/plugins/jquery/jquery.min.js"></script>
 <!-- Bootstrap 4 -->
-<script src="<?= base_url('./assets') ?>/AdminLTE/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="<?= base_url('assets') ?>/AdminLTE/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- DataTables -->
-<script src="<?= base_url('./assets') ?>/AdminLTE/plugins/datatables/jquery.dataTables.min.js"></script>
-<script src="<?= base_url('./assets') ?>/AdminLTE/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
-<script src="<?= base_url('./assets') ?>/AdminLTE/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
-<script src="<?= base_url('./assets') ?>/AdminLTE/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+<script src="<?= base_url('assets') ?>/AdminLTE/plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="<?= base_url('assets') ?>/AdminLTE/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+<script src="<?= base_url('assets') ?>/AdminLTE/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+<script src="<?= base_url('assets') ?>/AdminLTE/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
 <!-- AdminLTE App -->
-<script src="<?= base_url('./assets') ?>/AdminLTE/dist/js/adminlte.min.js"></script>
+<script src="<?= base_url('assets') ?>/AdminLTE/dist/js/adminlte.min.js"></script>
 <!-- AdminLTE for demo purposes -->
-<script src="<?= base_url('./assets') ?>/AdminLTE/dist/js/demo.js"></script>
+<script src="<?= base_url('assets') ?>/AdminLTE/dist/js/demo.js"></script>
 
 <!-- Error Sweetalert -->
-<script src="<?= base_url('./assets') ?>/js/sweetalert2.all.min.js"></script>
-<script src="<?= base_url('./assets') ?>/js/myscript.js"></script>
+<script src="<?= base_url('assets') ?>/js/sweetalert2.all.min.js"></script>
+<script src="<?= base_url('assets') ?>/js/myscript.js"></script>
 
-<script src="<?= base_url('./assets') ?>/AdminLTE/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="<?= base_url('assets') ?>/AdminLTE/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- ChartJS -->
-<script src="<?= base_url('./assets') ?>/AdminLTE/plugins/chart.js/Chart.min.js"></script>
 <!-- Sparkline -->
-<script src="<?= base_url('./assets') ?>/AdminLTE/plugins/sparklines/sparkline.js"></script>
+<script src="<?= base_url('assets') ?>/AdminLTE/plugins/sparklines/sparkline.js"></script>
 <!-- JQVMap -->
-<script src="<?= base_url('./assets') ?>/AdminLTE/plugins/jqvmap/jquery.vmap.min.js"></script>
-<script src="<?= base_url('./assets') ?>/AdminLTE/plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+<script src="<?= base_url('assets') ?>/AdminLTE/plugins/jqvmap/jquery.vmap.min.js"></script>
+<script src="<?= base_url('assets') ?>/AdminLTE/plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
 
 <script>
     $(function() {

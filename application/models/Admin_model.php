@@ -33,6 +33,38 @@ class Admin_model extends CI_Model
         return $result->row_array();
     }
 
+    public function countJumlahWarga()
+    {
+
+        $sql = "SELECT Count(nama) as jumlahwarga from tbl_data_warga";
+        $result = $this->db->query($sql);
+        return $result->row_array();
+    }
+
+    public function countJumlahWargaL()
+    {
+
+        $sql = "SELECT Count(nik) as jumlahwargaL from tbl_data_warga where jenis_kelamin ='Laki-Laki'";
+        $result = $this->db->query($sql);
+        return $result->row_array();
+    }
+
+    public function countJumlahWargaP()
+    {
+
+        $sql = "SELECT Count(bpjs) as jumlahwargaP from tbl_data_warga where jenis_kelamin ='Perempuan'";
+        $result = $this->db->query($sql);
+        return $result->row_array();
+    }
+
+    public function countJumlahKK()
+    {
+
+        $sql = "SELECT Count(status) as jumlahKK from tbl_data_warga where status ='kepala Keluarga'";
+        $result = $this->db->query($sql);
+        return $result->row_array();
+    }
+
     public function addDataPUSKBM()
     {
         $data = [
@@ -192,5 +224,51 @@ class Admin_model extends CI_Model
 
         $this->db->where('id', $id);
         $this->db->update('tbl_rentang_usia', $data);
+    }
+
+    public function getDataWargabyRt($rt)
+    {
+        $sql = "SELECT * from tbl_data_warga where rt = '$rt' ";
+        $result = $this->db->query($sql);
+        return $result->result_array();
+    }
+
+    public function addDataWargaM()
+    {
+        $data = [
+            "nik"                   => $this->input->post('nik'),
+            "nama"                  => $this->input->post('nama'),
+            "tanggal_lahir"         => $this->input->post('tanggal_lahir'),
+            "jenis_kelamin"         => $this->input->post('jenis_kelamin'),
+            "bpjs"                  => $this->input->post('bpjs'),
+            "status"                => $this->input->post('status'),
+            "no_kk"                 => $this->input->post('no_kk'),
+            "rt"                    => $this->input->post('rt')
+        ];
+
+        $this->db->insert('tbl_data_warga', $data);
+    }
+
+    public function deleteDataWargaM($id)
+    {
+        $this->db->where('id', $id);
+        $this->db->delete('tbl_data_warga');
+    }
+
+    public function editDataWargaM($id)
+    {
+        $data = [
+            "nik"                   => $this->input->post('nik'),
+            "nama"                  => $this->input->post('nama'),
+            "tanggal_lahir"         => $this->input->post('tanggal_lahir'),
+            "jenis_kelamin"         => $this->input->post('jenis_kelamin'),
+            "bpjs"                  => $this->input->post('bpjs'),
+            "status"                => $this->input->post('status'),
+            "no_kk"                 => $this->input->post('no_kk'),
+            "rt"                    => $this->input->post('rt')
+        ];
+
+        $this->db->where('id', $id);
+        $this->db->update('tbl_data_warga', $data);
     }
 }
