@@ -212,4 +212,57 @@ class Cetak extends CI_Controller
         }
         $pdf->Output('I', 'Data Jumlah KK dan Jumlah Jiwa Menurut ' . $rt, '');
     }
+
+    public function dataWargabyRt($rt)
+    {
+        $pdf = new FPDF('P', 'mm', 'A4');
+        $pdf->SetTitle('Cetak Data Warga');
+        $pdf->AddPage();
+        $pdf->Ln();
+        // $pdf->Image('./assets/img/logo/logo.png', 17, 10, -350);
+        $pdf->SetFont('Arial', 'B', 16);
+        $pdf->Cell(190, 9, 'Data Warga Dusun Ngajaran', 0, 1, 'C');
+
+
+        $pdf->SetFont('Arial', '', 10);
+
+        $pdf->SetFont('Arial', 'B', 10);
+        $pdf->Cell(190, 7, 'TAHUN ' . date('Y'), 0, 1, 'C');
+
+        $pdf->SetFont('Arial', 'B', 12);
+        $pdf->Cell(190, 2, '_____________________________________________________________________________', 0, 1, 'C');
+        $pdf->Ln(4);
+
+        $pdf->SetFont('Arial', 'B', 10);
+        $pdf->Cell(190, 10, 'RT 0' . $rt, 0, 1, 'C');
+
+        $pdf->Ln(4);
+        $pdf->Cell(10, 6, '', 0, 10, 'C');
+        $pdf->SetFont('Arial', 'B', 8);
+        $pdf->Cell(8, 6, 'NO', 1, 0, 'C');
+        $pdf->Cell(30, 6, 'NIK', 1, 0, 'C');
+        $pdf->Cell(35, 6, 'NAMA', 1, 0, 'C');
+        $pdf->Cell(30, 6, 'TANGGAL LAHIR', 1, 0, 'C');
+        $pdf->Cell(10, 6, 'UMUR', 1, 0, 'C');
+        $pdf->Cell(25, 6, 'JENIS KELAMIN', 1, 0, 'C');
+        $pdf->Cell(25, 6, 'BPJS', 1, 0, 'C');
+        $pdf->Cell(30, 6, 'NO KK', 1, 1, 'C');
+
+
+        $data = $this->Admin_model->getDataWargabyRt($rt);
+        $i = 1;
+        $pdf->SetFont('Arial', '', 8);
+        foreach ($data as $p) {
+            $pdf->Cell(8, 6, $i, 1, 0, 'C');
+            $pdf->Cell(30, 6, $p['nik'], 1, 0, 'C');
+            $pdf->Cell(35, 6, $p['nama'], 1, 0, 'C');
+            $pdf->Cell(30, 6, $p['tanggal_lahir'], 1, 0, 'C');
+            $pdf->Cell(10, 6, date('Y') -  substr($p['tanggal_lahir'], 0, 4), 1, 0, 'C');
+            $pdf->Cell(25, 6, $p['jenis_kelamin'], 1, 0, 'C');
+            $pdf->Cell(25, 6, $p['bpjs'], 1, 0, 'C');
+            $pdf->Cell(30, 6, $p['no_kk'], 1, 1, 'C');
+            $i++;
+        }
+        $pdf->Output('I', 'Data Jumlah KK dan Jumlah Jiwa Menurut ' . $rt, '');
+    }
 }

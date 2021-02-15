@@ -15,7 +15,7 @@
                                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-add">
                                     <i class="fas fa-plus"> </i> Tambah Data
                                 </button>
-                                <a href="<?= base_url('Cetak/dataPUSByRt/') ?><?= $index['rt'] ?>" target="_blank" class="btn btn-success ml-2">
+                                <a href="<?= base_url('Cetak/dataWargabyRt/') ?><?= $index['rt'] ?>" target="_blank" class="btn btn-success ml-2">
                                     <i class="fas fa-print"> </i> Cetak Data PDF</a>
                             </div>
                         </div>
