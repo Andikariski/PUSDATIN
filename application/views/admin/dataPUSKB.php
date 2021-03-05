@@ -48,8 +48,8 @@
                                         <td><?= $i ?></td>
                                         <td><?= $pus['nama_istri'] ?></td>
                                         <td><?= $pus['nama_suami'] ?></td>
-                                        <td><?= $pus['ttl_istri'] ?></td>
-                                        <td><?= $pus['ttl_suami'] ?></td>
+                                        <td><?= date('d F Y', strtotime($pus['ttl_istri'])) ?></td>
+                                        <td><?= date('d F Y', strtotime($pus['ttl_suami'])) ?></td>
                                         <td><?= $pus['jumlah_anak'] ?> orang</td>
                                         <td><?= $pus['umur_anak_terkecil'] ?> tahun</td>
                                         <td><?= $pus['kesertaan_kb'] ?></td>
@@ -139,9 +139,15 @@
                             <div class="form-group">
                                 <label>Kesertaan KB</label>
                                 <select class="form-control" name="kesertaan_kb" required>
-                                    <option selected>--Pilih--</option>
+                                    <option>--Pilih--</option>
                                     <option>PIL</option>
                                     <option>SUNTIK</option>
+                                    <option>IMPLANT</option>
+                                    <option>IUD</option>
+                                    <option>CO</option>
+                                    <option>MOW</option>
+                                    <option>MOP</option>
+                                    <option>OV</option>
                                 </select>
                             </div>
                         </div>
@@ -231,6 +237,12 @@
                                         <option selected value="<?= $pus['kesertaan_kb'] ?>"><?= $pus['kesertaan_kb'] ?></option>
                                         <option>PIL</option>
                                         <option>SUNTIK</option>
+                                        <option>IMPLANT</option>
+                                        <option>IUD</option>
+                                        <option>CO</option>
+                                        <option>MOW</option>
+                                        <option>MOP</option>
+                                        <option>OV</option>
                                     </select>
                                 </div>
                             </div>

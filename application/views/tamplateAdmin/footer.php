@@ -1,6 +1,6 @@
 <!-- /.content-wrapper -->
 <footer class="main-footer text-center">
-    <strong>Copyright &copy; <?= date('Y') ?> <a href="http://adminlte.io" class="">KKN UAD unit XI.A.2</a></strong>
+    <strong>Copyright &copy; <?= date('Y') ?> <a href="http://adminlte.io" class="">KKN UAD 81 unit XI.A.2</a></strong>
 </footer>
 
 <!-- Control Sidebar -->

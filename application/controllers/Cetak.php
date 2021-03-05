@@ -41,7 +41,7 @@ class Cetak extends CI_Controller
         $pdf->Cell(8, 6, 'NO', 1, 0, 'C');
         $pdf->Cell(30, 6, 'NAMA ISTRI', 1, 0, 'C');
         $pdf->Cell(32, 6, 'NAMA SUAMI', 1, 0, 'C');
-        $pdf->Cell(27, 6, 'TANGGAL LAHIR', 1, 0, 'C');
+        $pdf->Cell(27, 6, 'TTL ISTRI', 1, 0, 'C');
         $pdf->Cell(25, 6, 'JUMLAH ANAK', 1, 0, 'C');
         $pdf->Cell(40, 6, 'UMUR ANAK TERKECIL', 1, 0, 'C');
         $pdf->Cell(25, 6, 'KESERTAAN KB', 1, 1, 'C');
@@ -55,7 +55,7 @@ class Cetak extends CI_Controller
             $pdf->Cell(8, 6, $i, 1, 0, 'C');
             $pdf->Cell(30, 6, $p['nama_istri'], 1, 0, '');
             $pdf->Cell(32, 6, $p['nama_suami'], 1, 0, '');
-            $pdf->Cell(27, 6, $p['ttl_istri'], 1, 0, 'C');
+            $pdf->Cell(27, 6, date('d F Y', strtotime($p['ttl_istri'])), 1, 0, 'C');
             $pdf->Cell(25, 6, $p['jumlah_anak'], 1, 0, 'C');
             $pdf->Cell(40, 6, $p['umur_anak_terkecil'], 1, 0, 'C');
             $pdf->Cell(25, 6, $p['kesertaan_kb'], 1, 1, 'C');
